@@ -13,7 +13,7 @@ const DB = process.env.DB_DRIVER_URL.replace(
 mongoose
   .connect(DB)
   .then(() => console.log(`CONNECTED TO MONGODB DATABASE...`))
-  .catch((err) => console.log(err.messge));
+  .catch((err) => console.log(err.message));
 
 const port = process.env.PORT || 8080;
 app.listen(port, (req, res) => {
