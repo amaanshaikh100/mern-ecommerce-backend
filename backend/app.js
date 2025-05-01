@@ -1,4 +1,5 @@
 const express = require("express");
+
 const app = express();
 
 app.get("/", (req, res) => {
@@ -7,6 +8,4 @@ app.get("/", (req, res) => {
   });
 });
 
-app.listen(3000, (req, res) => {
-  console.log(`LISTENING ON PORT 3000...`);
-});
+module.exports = app;
